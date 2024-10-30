@@ -1,0 +1,667 @@
+							C# Questions: 
+
+
+Q1: You're working on a web application that needs to handle a large number of concurrent requests efficiently. You're considering using asynchronous programming to improve responsiveness and scalability.
+
+Q2: What is synchronization about a thread in C#?
+
+Q3: You are working on a C# application that generates large PDF reports. The reports can take several minutes to generate, potentially blocking the application for users. How can you improve the user experience and responsiveness of your application while processing these reports?
+
+Q4: You are developing a Windows Forms application in C#. The application needs to respond to user interface events while keeping the main Ul thread responsive. Which asynchronous programming feature is most suitable for handling background tasks without blocking the UI?,
+
+Q5: You're developing a multithreaded application that processes large datasets. You need to ensure that multiple threads can safely access and update a shared collection of items, preventing data corruption and race conditions.
+
+Which of the following approaches is most suitable for achieving thread-safe access to the shared collection?
+
+Q6: You want to dynamically load and execute a plugin from an extemal assembly at runtime. The extemal assembly External Plugin.dll contains the following implementation:
+
+Q7: You are implementing a C# class that represents a complex mathematical calculation. You want to ensure that this class is thread-safe. Which C# keyword can be used to prevent multiple threads from accessing a critical section of code simultaneously?
+
+Q8: You need to access information about the current workflow instance, such as the initiating user or workflow parameters, within a custom workflow activity. Which property of the CodeActivityContext class provides access to the workflow execution context?
+
+Q9: You are developing a customer support system where a customer can have multiple support tickets. Depending on the number of tickets, the customer can be classified as a Low, Medius, or High priority customer. Consider the following implementation:
+
+Q10: 
+
+QuickSort
+
+Bubble Sort
+
+MergeSort
+
+SelectionSort
+
+
+Q11:Given that the required namespaces are included, consider the following snippet of Cl code
+
+public class Example
+
+public static void Main()
+
+int[] numbers (1, 2, 3, 4, 5);
+
+var query numbers, AsParallel()
+
+Where(on%20) Select(n >> Math.Pow(n, 2)) OrderByDescending(n) .ToArray();
+
+Console.WriteLine($"Result: (string.Join(",", query))");
+
+}
+
+} 
+
+Q12:The below given incomplete C# code snippet is used to determine the surface areas of shapes. Circle, Square, and Rectangle are subclasses of the base class, Drawing. You are required to determine which of the provided alternatives must be used in place of BLANK 1- to run the code successfully.
+
+using Systen;
+
+public class Drawing
+
+-BLANK 1.
+
+}
+
+public class Circle: Drawing
+
+public double Radius (get; set; }
+
+public Circle()
+
+{ Radius 5;
+
+}
+
+public override double Area() {
+
+return (3.14) Math.Pow(Radius, 2); }
+
+}
+
+public class Square: Drawing
+
+public double Length { get; set; } public Square()
+
+Length - 6;
+
+public override double Area()
+
+return Math.Pow(Length, 2):
+}
+}
+public class Rectangle: Drawing
+
+public double Height (get; set; ) public double Width { get; set; }
+
+public Rectangle()
+
+Height - 5.3; Width - 3.4;
+
+public override double Area() { return Height Width;
+
+}
+
+class Program
+
+{ static void Main(string[] args) {
+
+Drawing circle new Circle();
+
+Console.WriteLine("Area:" circle. Area());
+
+Drawing square new Square();
+
+Console.WriteLine("Area:" + square.Area());
+
+Drawing rectangle new Rectangle(); Console.WriteLine("Area:" rectangle.Area(
+}
+}
+
+Q13:You are building a customer workflow system where customers can have multiple orders. Each customer can be in different states such as New, Active, and Inactive. Consider the following C# implementation:
+
+public enum CustomerState
+
+{
+
+New,
+
+Active,
+
+Inactive
+
+}
+
+public class Customer
+
+{
+
+public string Name { get; set; }
+
+public CustomerState State { get; set; }
+
+public List<string> Orders { get; set; }
+
+public Customer (string name)
+
+{
+
+Name name;
+
+State = CustomerState.New;
+
+Orders = new List<string>();
+
+}
+public void PlaceOrder (string order)
+
+{
+
+Orders.Add(order);
+
+State CustomerState.Active;
+
+}
+
+public void Deactivate()
+
+{
+
+if (Orders.Count(0)
+
+{
+
+State CustomerState. Inactive;
+
+}
+
+class Program (
+
+static void Main(string[] args)
+
+{
+
+Customer customer new Customer("John Doe");
+
+customer.PlaceOrder("Order1");
+
+customer. Deactivate();
+
+Console.WriteLine($"{customer. Name) is (customer.State}");
+
+}
+
+}
+What will be the output when the Main method is executed?
+
+
+Q14:Your workflow needs to access information about the current execution context, such as the initiating user or related entities. Which property of the CodeActivityContext class provides access to the workflow execution context?
+
+Q15:What is the difference between '==' and 'Equals' in C#?
+
+Q16:You are developing a REST API in C# that needs to handle large volumes of concurrent requests. You want to maximize performance and responsiveness while efficiently utilizing resources. Which of the following approaches would be most effective?
+
+Q17:What will be the output of the following C# code?
+
+using System;
+
+namespace Delegates {
+
+class Program
+
+{
+
+delegate void operation();
+
+static void Main(string[] args)
+
+{
+
+operation obj delegate
+
+int[] arr= {1, 2, 3};
+
+{
+
+Console.Write(arr[2]*arr[1]);
+
+};
+
+obj();
+
+}
+
+Q18:What is the output of the following C# code?
+
+number;
+
+(number)
+
+15 1:
+
+{
+
+Console.WriteLine("Law");
+
+break;
+
+case 4:
+
+case 5:
+
+case 6:
+
+Console.WriteLine("Medium");
+
+break;
+
+default:
+
+Console.WriteLine("High");
+
+break
+}
+
+
+Q19:You are designing a C# application that needs to communicate with a web service using HTTP. Which class in the NET framework is commonly used for making HTTP requests and handling responses asynchronously?
+
+
+Q20:You are working on a project that requires you to format phone numbers in a specific way. You are required to create an extension method for the string type that formats a phone number in the format: (xxx) xxx-xxxx
+
+Which of the following C# code snippets will you use to accomplish this task?
+
+public static class StringExtensions
+
+{ public static string FormatPhoneNumber(this string s)
+
+return string.Format("((0:###)) (1:###}-(2:####}", s.Substring(0, 3), s.Substring(3, 3), s.Substring(6));
+
+}
+
+}
+
+public static class StringExtensions
+
+{ public static string FormatPhoneNumber(string s)
+
+{ return string.Format("((0:###)) (1:#n#}-(2:####}", s.Substring(0, 3), s.Substring(3, 6), s.Substring(6));
+
+}
+
+}
+public class StringExtensions
+
+public static string FormatPhoneNumber(string s)
+
+{ return string.Format("((0:###)) (1:###)-(2:)", s.Substring(0, 3), s.Substring(3, 3), s.Substring(6));
+
+}
+
+}
+
+public class StringExtensions
+
+{ public static string FormatPhoneNumber(this string s)
+
+( return string.Format("((0:###)) (1)-(2:)", s.Substring(0, 3), s.Substring(4, 3), s.Substring(7));
+
+}
+
+Q21:onsider the following code snippet in a C#:
+
+public interface IPlugin
+
+( string Name { get; } void Execute();
+
+public class MyPlugin: IPlugin (
+
+public string Name { get; private set;)
+
+public MyPlugin(string name) {
+
+Name
+
+name;
+
+}
+
+public void Execute() Console.WriteLine($"Executing (Name) plugin..."); }
+
+}
+
+public class PluginExecutor (
+
+public void RunPlugin (IPlugin plugin)
+
+plugin. Execute();
+
+}
+
+}
+
+class Program
+
+static void Main(string[] args)
+
+{ IPlugin plugin = new MyPlugin("SamplePlugin"); PluginExecutor executor new PluginExecutor
+executor. RunPlugin(plugin);
+
+}
+
+What will be the output when the Main method is executed?
+
+
+
+								ASP.Net Questions: 
+Q1 :ASP.NET core, you have Razor code that creates markup for two handlers using the asp-page-handler class. Tag Assistant
+
+@page
+
+@model CreateModel
+
+<html>
+
+<body>
+
+<form method="POST">
+
+<div>Name: <input asp-for-"Customer. Name" /></div>
+
+<input type="submit" asp-page-handler"JoinAcamedy" value="Join" />
+
+<input type="submit" asp-page-handler "JoinAcademyUC" value="JOIN UC" />
+
+</form>
+
+</body>
+
+</html>
+
+What does the two submit buttons contained in the Razor form utilizes to submit to a separate URL?
+
+Q2: What will be the output for this call of this ASP.NET code?
+
+Route: api/Test
+
+HTTP method: POST
+
+Form a: 4
+
+Main API below:
+
+[Route("api/[controller]")]
+
+public class TestController Controller
+
+{
+
+[HttpGet]
+
+public double Test1([FromForm] double a) (
+
+HebRequest request WebRequest.Create("http://localhost:2000/api/Test");
+
+request.Method "POST":
+
+WebResponse response request.GetResponse();
+
+Stream str response.GetResponseStream();
+
+StreamReader reader new StreamReader(str);
+
+string resp reader.ReadToEnd();
+
+return a Convert.ToDouble(resp);
+
+}
+
+[HttpPost]
+
+public double Test2() {
+
+WebRequest request WebRequest.Create("http://localhost:2000/api/Test");
+
+request.Method "GET";
+
+WebResponse response request.GetResponse();
+
+Stream str response.GetResponseStream();
+
+StreamReader reader now StreamReader(str);
+
+string resp reader. ReadToEnd();
+
+return a Convert.ToDouble(resp);
+Secondary API (localhost:2000) below:
+
+3
+
+2
+
+[Route("api/[controller]")]
+
+public class TestController: Controller
+
+{ [HttpGet] public double Testi ([FromHeader] double a) { return 2; }
+
+[HttpPost] public double Test2() { return 4;
+
+}
+
+}
+
+
+Q3: Which of the following options will display the actions methods as desired by Dwight?
+
+RoutePrefix attribute on top of the controller should be added.
+
+[RoutePrefix("MyWebsite")]
+
+public class HomeController: Controller()
+
+RouteArea attribute on top of the controller should be added,
+
+[RouteArea ("MyWebsite")]
+
+public class HomeController: Controller()
+
+Route attribute on top of the controller should be added.
+
+[Route("MyWebsite")]
+
+public class HomeController: Controller()
+
+MyRoute attribute on top of the controller should be added.
+
+[MyRoute("MyWebsite")]
+
+public class HomeController: Controller(
+
+Q4: Write an ASP.NET code that stores the textbox's value (as shown below) temporarily before postback, and empty the value on pressing enter.
+
+My Text : test
+
+
+
+Q5:Which is correct for sending responses with headers in NET REST API?
+
+Request.Header's.Add("testheader", "testvalue");
+
+Response.Headers.Add("testheader", "testvalue");
+
+Response.Add("testheader", "testvalue");
+
+Response.Header.Send("testheader", "testvalue");
+
+Q6: You are working on a ASP.NET project, and the Page Life Cycle is raised at the end of the event handling stage.
+
+Which of the following options represents this phase?
+
+protected void Page_Int(object sender, EventArgs e)
+
+{
+
+}
+
+//more code here
+
+protected void Page_IntComplete(object sender, EventArgs e)
+
+{
+
+}
+
+//more code here
+
+protected void Page_PreInit(object sender, EventArgs e)
+
+{
+
+}
+
+//more code here
+
+protected void Page_LoadComplete(object sender, EventArgs e)
+
+{
+
+}
+
+Q7: Which code will return the header when you work with .NET REST?
+
+public string Test([FromHeader]string a)
+
+return a;
+
+}
+
+public string Test([Header] string a)
+
+{ return a; }
+
+public string Test([Through Header] string a)
+
+{ return a; }
+
+public string Test([FromQuery] string a)
+
+{ return a;
+
+Q8: Write an asynchronous method in ASP.NET that gets the URL address, and employee IP address using the web form and, also gathers the employee's details from the database by calling GetEmpDetails() method.:
+
+Q9: In .NET technology, various forms of caching can be employed, such as caching an entire page output by including a directive at the top of the page.
+
+Identify the directive that will cache an entire page output.
+
+@OutputCache
+
+@InputCache
+
+@CacheOutput
+
+Q10: A programmer has developed an application using ASP.NET MVC5 and the application works fine on Visual Studio. But, when the programmer tries to publish the application, he encounters an IIS error (HTTP status code error that does not allow the application to run on the server). Which best troubleshooting step would be followed by the programmer to resolve the error?
+
+Exclude LoginViewModel of the views folder to the project of the application.
+
+Add web.config of the views folder to the project of the application.
+
+Add LoginViewModel of the views folder to the project of the application.
+
+Exclude web.config of the views folder to the project of application.
+
+Q11:Which type of authentication is used in the given scenario?
+
+1. Server receives the username and password from the client.
+
+2. Client receives a challenge from the server.
+
+3. 24-byte result is given by the client to the server.
+
+4. By contacting the Domain controller, the server checks the response.
+
+5. If everything is fine, it grants the request.
+
+NTLM
+
+Form based
+
+Passport
+
+Windows
+
+Q12:Write an ASP.NET code for the below-shown JSON data that should be displayed in a grid format.
+
+("CustID":"201", "Cust Name":"Tim", "CustAddress": "California")
+
+{"CustID":"282", "Cust Name":"Jack", "Arizona": "California")
+
+{"CustID":"203", "Cust Name":"Ketty", "London": "California")
+
+Q13:What is the output of the below ASP.NET code?
+
+using System;
+
+using System.Linq;
+
+using System.Collections.Generic;
+
+public class Program{
+
+public static void Main() {
+
+IList<int> ilist new List<int>() {1,2,3,4,5,6);
+
+IList<string> sList = new List<string>() { "hi", "hello", null, "good", "fine"};
+
+Console.WriteLine("1st ilist: (0)", iList. ElementAt(8)); Console.WriteLine("1st sList (0)", sList.ElementAt(0));
+
+Console.WriteLine("2nd iList: (8)", ilist.ElementAt(1));
+
+Console.WriteLine("2nd sList (0)", sList.ElementAt(1)); Console.WriteLine("3rd iList: (0)", ilist.ElementAtOrDefault(2));
+
+Console.WriteLine("3rd SList: (0)", SList.ElementAtOrDefault(2));
+
+Console.WriteLine("10th Element in ilist: (8)", ilist.ElementAtOrDefault(9));
+
+Console.WriteLine("10th Element in sList: (0)", sList. ElementAtOrDefault(9));
+
+}}
+
+Q14:Webservices are built in an ASP.NET server using PHP (has SSL certificate) and SOAP services and hosted on an ASP server. When API calls are made on the server by enabling SOAP services and calling API from PHP, a WSDL error occurs. Which operation would be used to parse WSDL error via PHP on the ASP server that requests for a string in API calls?
+
+Wrap parameter in an associative array.
+
+WSDL cannot be diagnosed in PHP.
+
+Replace the response object in SoapClient.
+
+Inherit parameter in a string.
+
+Q15: Tracy is trying to display some data in a view in the ASP.NET code below. However, she is unable to get the desired output.
+
+public Actionñesult Index() {
+
+List<string> Student = new List<string>(); Student.Add("Ted");
+
+Student.Add("Barney"); Student.Add("Marshall");
+
+Student.Add("11lly");
+
+Student.Add("Robin");
+
+TempData["Student") Student;
+
+return View();
+
+}
+
+//.cshtel code
+
+<ul>
+
+@foreach (var student in TempData.Student as List<string>)
+
+{
+
+<11> @student</11>
+
+) </ul>
+
+What changes should she make to achieve her desired output?
